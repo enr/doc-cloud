@@ -8,7 +8,7 @@ Build:
 
 Artifacts in `build/libs`.
 
-BuildEclipse files:
+Build Eclipse files:
 
 ```
 ./gradlew eclipse
