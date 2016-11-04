@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+archivesBaseName = 'dot-cloud'
+version = '1'
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile 'com.sun.faces:jsf-api:2.2.13'
+    compile 'com.sun.faces:jsf-impl:2.2.13'
+	compile 'org.primefaces:primefaces:5.1'
+	compile 'javax.enterprise:cdi-api:1.2'
+	compile 'org.springframework.boot:spring-boot-starter-web:1.3.3.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-security:1.3.3.RELEASE'
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat:1.3.3.RELEASE'
+}
