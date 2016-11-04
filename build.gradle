@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'war'
-archivesBaseName = 'dot-cloud'
+archivesBaseName = 'doc-cloud'
 version = '1'
 repositories {
     mavenCentral()

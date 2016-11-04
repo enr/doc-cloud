@@ -2,7 +2,7 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
     xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
     http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-	<display-name>Spring 4 Security  + JSF 2 + PrimeFaces 5  Integration Example</display-name>
+	<display-name>Doc Cloud Fitness Team</display-name>
     <servlet>
       <servlet-name>FacesServlet</servlet-name>
       <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
