@@ -1,19 +1,72 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html">
     <h:head>
-        <title>Doc Cloud Fitness Team</title>
+        <title></title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <!-- Meta, title, CSS, favicons, etc. -->
+	    <meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	    <title>Doc Cloud Fitness Team | </title>
+	
+	    <!-- Bootstrap -->
+	    <link href="./resources/css/bootstrap.min.css" rel="stylesheet" />
+	    <!-- Font Awesome -->
+	    <link href="./resources/css/font-awesome.min.css" rel="stylesheet" />
+	    <!-- NProgress -->
+	    <link href="./resources/nprogress/nprogress.css" rel="stylesheet" />
+	    <!-- Animate.css -->
+	    <link href="./resources/animate.css/animate.min.css" rel="stylesheet" />
+	
+	    <!-- Custom Theme Style -->
+	    <link href="./resources/css/custom.min.css" rel="stylesheet" />
+
     </h:head>
-    <h:body>
-       <h3>Doc Cloud Fitness Team</h3>
-        <font color="red">
+    <h:body styleClass="login">
+          <div>
+      <a class="hiddenanchor" id="signup"></a>
+      <a class="hiddenanchor" id="signin"></a>
+        <font color="red"> 
 		     <h:outputLabel value="${SPRING_SECURITY_LAST_EXCEPTION.message}"/>
         </font>
-		<form action="${request.contextPath}/appLogin" method="POST">
-			<h:outputLabel value="Enter UserName:" />
-			<input type="text" name="app_username"/><br/><br/>
-			<h:outputLabel value="Enter Password:" />
-			<input type="password" name="app_password"/> <br/><br/>			
-			<input type="submit" value="Login"/>
+
+      <div class="login_wrapper">
+        <div class="animate form login_form">
+          <section class="login_content">
+			<form action="${request.contextPath}/appLogin" method="POST">
 			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>			
-		</form>
+
+              <h1>Login Form</h1>
+              <div>
+                <input type="text" class="form-control" name="app_username"  placeholder="Username" required="" />
+              </div>
+              <div>
+                <input type="password" class="form-control" name="app_password" placeholder="Password" required="" />
+              </div>
+              <div>
+                <a class="btn btn-default submit" href="#" onclick="document.forms[0].submit();">Log in</a>
+                <a class="reset_pass" href="#">Lost your password?</a>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="separator">
+
+
+                <div class="clearfix"></div>
+                <br />
+
+                <div>
+                  <h1><i class="fa fa-paw"></i> Fitness Team </h1>
+                  <p>©2016 Fitness Team </p>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+
+      </div>
+    </div>
+
     </h:body>
 </html> 
