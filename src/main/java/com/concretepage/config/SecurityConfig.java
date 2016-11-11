@@ -22,9 +22,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public DriverManagerDataSource dataSource() {
         DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
         driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        driverManagerDataSource.setUrl("jdbc:mysql://192.168.180.183:3306/doccloud?profileSQL=true");
+        driverManagerDataSource.setUrl("jdbc:mysql://192.168.180.191:3306/doccloud?profileSQL=true");
         driverManagerDataSource.setUsername("root");
-        // driverManagerDataSource.setPassword("password");
+        driverManagerDataSource.setPassword("3H9XeV21P65mlwS9exxM");
         return driverManagerDataSource;
     }
 
